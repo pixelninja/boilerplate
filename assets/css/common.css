@@ -1,0 +1,333 @@
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * Helper mixins
+ */
+/*
+ * Media Queries
+ */
+/* Helvetica */
+/* Open Sans */
+/* line 17, sass/_base_copy.scss */
+.l-copy ul,
+.l-copy ol,
+.l-copy p {
+  padding: 0 0 8px;
+}
+/* line 22, sass/_base_copy.scss */
+.l-copy ul,
+.l-copy ol {
+  padding-left: 20px;
+  list-style: disc;
+}
+/* line 27, sass/_base_copy.scss */
+.l-copy ol {
+  list-style: decimal;
+}
+
+/* line 1, sass/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, sass/_base.scss */
+html {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+}
+
+/* line 12, sass/_base.scss */
+body {
+  min-width: 320px;
+  height: 100%;
+  font-size: 62.5%;
+  /* Reset to 10px for em calcs */
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+  color: black;
+  -webkit-text-size-adjust: none;
+}
+
+/* line 24, sass/_base.scss */
+h1, h2, h3, h4 {
+  font-size: 3.2em;
+  line-height: 1.4em;
+  font-weight: 800;
+}
+
+/* line 38, sass/_base.scss */
+h2 {
+  font-size: 2.4em;
+}
+
+/* line 42, sass/_base.scss */
+h3 {
+  font-size: 1.9em;
+}
+
+/* line 46, sass/_base.scss */
+h4 {
+  font-size: 1.6em;
+}
+
+/* line 50, sass/_base.scss */
+h5 {
+  font-size: 1.3em;
+}
+
+/* line 54, sass/_base.scss */
+h6 {
+  font-size: 1.1em;
+}
+
+/* line 62, sass/_base.scss */
+p,
+li,
+span,
+label,
+dd, dt {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: black;
+}
+
+/* line 69, sass/_base.scss */
+a {
+  font-size: inherit;
+  text-decoration: none;
+  -webkit-transition: color 60ms linear;
+  -moz-transition: color 60ms linear;
+  -o-transition: color 60ms linear;
+  transition: color 60ms linear;
+}
+
+/* line 81, sass/_base.scss */
+figure img,
+a img {
+  display: block;
+  vertical-align: baseline;
+}
+
+/* line 86, sass/_base.scss */
+b, strong {
+  font-weight: 800;
+}
+
+/* line 90, sass/_base.scss */
+i, em {
+  font-style: italic;
+}
+
+@media (max-width: 719px), (max-width: 799px) and (orientation: landscape) {
+  /* line 101, sass/_base.scss */
+  body {
+    overflow-x: hidden;
+  }
+}
+@-webkit-keyframes spin {
+  /* line 30, sass/_mod_spinner.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  /* line 30, sass/_mod_spinner.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 30, sass/_mod_spinner.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  /* line 30, sass/_mod_spinner.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* line 33, sass/_mod_spinner.scss */
+.spinner {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 100%;
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -ms-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  position: absolute;
+  bottom: 8px;
+  left: 70px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 60ms linear;
+  -moz-transition: opacity 60ms linear;
+  -o-transition: opacity 60ms linear;
+  transition: opacity 60ms linear;
+}
+/* line 13, sass/_mod_spinner.scss */
+.spinner:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  border: 4px solid transparent;
+  border-bottom-color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Some form resets (taken from Normalize.css) */
+/* line 6, sass/_mod_forms.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 13, sass/_mod_forms.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 20, sass/_mod_forms.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 26, sass/_mod_forms.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 30, sass/_mod_forms.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 34, sass/_mod_forms.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* end */
+/* line 40, sass/_mod_forms.scss */
+form,
+.form {
+  position: relative;
+}
+
+/* line 53, sass/_mod_forms.scss */
+textarea {
+  resize: vertical;
+}

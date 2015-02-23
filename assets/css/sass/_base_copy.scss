@@ -1,0 +1,50 @@
+.l-copy {
+
+	h1 {
+	
+	}
+
+	h2 {
+
+	}
+
+	h3 {
+
+	}
+
+	ul,
+	ol,
+	p {
+		padding: 0 0 8px;
+	}
+
+	ul,
+	ol {
+		padding-left: 20px;
+		list-style: disc;
+	}
+
+	ol {
+		list-style: decimal;
+	}
+
+	li,
+	p {
+
+	}
+
+	a {
+
+		&:hover {
+
+		}
+	}
+}
+
+@include breakpoint('lte-tablet') {
+
+}
+
+@include breakpoint('mobile') {
+
+}

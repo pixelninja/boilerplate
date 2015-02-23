@@ -1,0 +1,27 @@
+/* Helvetica */
+@mixin font-helvetica($font-size, $line-height: 1.6) {
+	@if $font-size {
+		font: $font-size/#{$line-height} Helvetica, arial, sans-serif;
+	}
+	@else {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+}
+
+@mixin helvetica {
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* Open Sans */
+@mixin font-opensans($font-size, $line-height: 1.6) {
+	@if $font-size {
+		font: $font-size/#{$line-height} "Open Sans", Helvetica, arial, sans-serif;
+	}
+	@else {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	}
+}
+
+@mixin opensans {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}

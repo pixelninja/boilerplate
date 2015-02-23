@@ -1,0 +1,104 @@
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	height: 100%;
+	// https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
+	text-rendering: optimizeLegibility;
+	font-size: 16px;
+}
+
+body {
+	min-width: 320px;
+	height: 100%;
+
+	font-size: 62.5%; /* Reset to 10px for em calcs */
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	line-height: 1.6em;
+	color: $black;
+	// https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+	-webkit-text-size-adjust: none;
+}
+
+h1, h2 ,h3, h4 {
+	font-size: 3.2em;
+	line-height: 1.4em;
+	font-weight: 800;
+
+	&, a, strong {
+
+	}
+}
+
+h1 {
+
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.9em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+h5 {
+	font-size: 1.3em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+
+p,
+li,
+span,
+label,
+dd, dt {
+	font-size: 1.4em;
+	line-height: 1.6em;
+	font-weight: 400;
+	color: $black;
+}
+
+a {
+	font-size: inherit;
+	text-decoration: none;
+
+	@include transition(color 60ms linear);
+
+	&:hover {
+
+	}
+}
+
+figure img,
+a img {
+	display: block;
+	vertical-align: baseline;
+}
+
+b, strong {
+	font-weight: 800;
+}
+
+i, em {
+	font-style: italic;
+}
+
+
+@include breakpoint('lte-tablet') {
+
+}
+
+@include breakpoint('mobile') {
+
+	body {
+		overflow-x: hidden;
+	}
+}

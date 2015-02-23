@@ -1,0 +1,43 @@
+@mixin spinner($color: $dark-grey, $size: 15px, $border-size: 2px, $arrow-size: 4px, $arrow-top: -5px) {
+    position: relative;
+    display: block;
+    width: $size;
+    height: $size;
+
+    border: $border-size solid $color;
+    border-top-color: transparent;
+    border-radius: 100%;
+
+	@include experimental(animation, spin 1s infinite linear);
+ 
+	&:after {
+	    display: block;
+	    content: '';
+	    width: 0;
+	    height: 0;
+	    position: absolute;
+	    top: $arrow-top;
+	    left: 0px;
+	    
+	    border: $arrow-size solid transparent;
+	    border-bottom-color: $color;
+	    
+	    @include transform(rotate(45deg));
+	}
+}
+
+@include keyframe(spin) {
+	to { @include transform(rotate(360deg)); }
+}
+
+.spinner {
+	@include spinner(#fff);
+	
+	position: absolute;
+	bottom: 8px;
+	left: 70px;
+	
+	@include opacity(0);
+	
+	@include transition(opacity 60ms linear);
+}

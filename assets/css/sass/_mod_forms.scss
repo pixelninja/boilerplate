@@ -1,0 +1,59 @@
+/* Some form resets (taken from Normalize.css) */
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+/* end */
+
+form,
+.form {
+	position: relative;
+}
+
+label {
+
+}
+
+input,
+textarea {
+
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type=submit],
+button {
+}
